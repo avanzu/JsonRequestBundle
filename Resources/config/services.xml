@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    
+    <parameters>
+        <parameter key="avanzu.request.action_listener.class">Avanzu\JsonRequestBundle\EventListener\JsonRequestListener</parameter>
+    </parameters>
+
+    <services>
+        <service id="avanzu.request.action_listener" class="%avanzu.request.action_listener.class%">
+            <tag name="kernel.event_listener" event="kernel.controller" method="onKernelController" />
+        </service>
+    </services>
+    
+</container>
