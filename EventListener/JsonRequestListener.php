@@ -3,7 +3,7 @@
 namespace Avanzu\JsonRequestBundle\EventListener;
 
 use Symfony\Component\HttpKernel\Event\FilterControllerEvent; 
-use Webistu\CommonBundle\Controller\JsonAcceptingController;
+use Avanzu\JsonRequestBundle\Controller\JsonAcceptingController;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
