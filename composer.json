@@ -13,5 +13,10 @@
         "symfony/http-foundation" : ">=2.3",
         "Symfony/http-kernel"  : ">=2.3",
         "symfony/event-dispatcher" : ">=2.3"
-    }
+    },
+    "autoload": {
+        "psr-0": { "Avanzu\\JsonRequestBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Avanzu/JsonRequestBundle"
 }
